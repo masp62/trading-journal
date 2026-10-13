@@ -237,6 +237,8 @@ class MarketIndexQuote(BaseModel):
     symbol: str = Field(..., description="Provider symbol")
     name: str = Field(..., description="Display name")
     time: str = Field(..., description="Last market update time (ISO-8601)")
+    interval_start_time: Optional[str] = Field(None, description="Start timestamp of the interval used for change")
+    interval_end_time: Optional[str] = Field(None, description="End timestamp of the interval used for change")
     last: Optional[float] = Field(None, description="Last traded price")
     prev: Optional[float] = Field(None, description="Previous close")
     high: Optional[float] = Field(None, description="Day high")

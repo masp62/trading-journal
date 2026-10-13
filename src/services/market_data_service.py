@@ -144,6 +144,7 @@ class MarketDataService:
         meta = chart_result.get("meta", {})
         fifty_two_week_high = self._to_float(meta.get("fiftyTwoWeekHigh"))
         fifty_two_week_low = self._to_float(meta.get("fiftyTwoWeekLow"))
+        interval_start_time, interval_end_time = self._extract_interval_bounds(chart_result)
 
         if selected_range == "1d":
             last = self._to_float(meta.get("regularMarketPrice"))
@@ -160,6 +161,10 @@ class MarketDataService:
                 change_percent = ((last - prev) / prev) * 100
 
             market_time = self._format_timestamp(meta.get("regularMarketTime"))
+            if not interval_end_time:
+                interval_end_time = market_time
+            if not interval_start_time:
+                interval_start_time = interval_end_time
         else:
             metrics = self._build_interval_metrics(chart_result)
             last = metrics["last"]
@@ -169,11 +174,15 @@ class MarketDataService:
             change = metrics["change"]
             change_percent = metrics["change_percent"]
             market_time = metrics["time"]
+            interval_start_time = metrics["interval_start_time"]
+            interval_end_time = metrics["interval_end_time"]
 
         return {
             "symbol": provider_symbol,
             "name": display_name,
             "time": market_time,
+            "interval_start_time": interval_start_time,
+            "interval_end_time": interval_end_time,
             "last": last,
             "prev": prev,
             "high": high,
@@ -216,6 +225,8 @@ class MarketDataService:
             "symbol": mapping["provider_symbol"],
             "name": mapping["name"],
             "time": self._format_timestamp(row.get("regularMarketTime")),
+            "interval_start_time": self._format_timestamp(row.get("regularMarketTime")),
+            "interval_end_time": self._format_timestamp(row.get("regularMarketTime")),
             "last": last,
             "prev": prev,
             "high": high,
@@ -257,10 +268,12 @@ class MarketDataService:
         if close_points:
             prev = close_points[0][1]
             last = close_points[-1][1]
+            first_timestamp = close_points[0][0]
             latest_timestamp = close_points[-1][0]
         else:
             prev = None
             last = None
+            first_timestamp = None
             latest_timestamp = None
 
         high_values = [self._to_float(value) for value in highs_raw]
@@ -281,6 +294,8 @@ class MarketDataService:
 
         return {
             "time": self._format_timestamp(latest_timestamp),
+            "interval_start_time": self._format_timestamp(first_timestamp),
+            "interval_end_time": self._format_timestamp(latest_timestamp),
             "last": last,
             "prev": prev,
             "high": high,
@@ -360,6 +375,8 @@ class MarketDataService:
             "symbol": mapping.get("provider_symbol", ""),
             "name": mapping.get("name", mapping.get("provider_symbol", "")),
             "time": datetime.now(UTC).isoformat(),
+            "interval_start_time": None,
+            "interval_end_time": None,
             "last": None,
             "prev": None,
             "high": None,
@@ -426,3 +443,13 @@ class MarketDataService:
         """Build a fully rendered request URL for debug logging."""
         prepared = requests.Request("GET", url, params=params).prepare()
         return prepared.url or url
+
+    def _extract_interval_bounds(self, chart_result: Dict[str, Any]) -> Tuple[Optional[str], Optional[str]]:
+        """Derive interval start/end timestamps from chart payload."""
+        timestamps = chart_result.get("timestamp", []) or []
+        if not timestamps:
+            return None, None
+
+        first = timestamps[0]
+        last = timestamps[-1]
+        return self._format_timestamp(first), self._format_timestamp(last)

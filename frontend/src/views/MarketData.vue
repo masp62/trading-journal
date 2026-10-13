@@ -68,7 +68,10 @@
                 <div class="provider-symbol">{{ indexItem.symbol }}</div>
                 <div v-if="indexItem.error" class="row-error">{{ indexItem.error }}</div>
               </td>
-              <td>{{ formatMarketTime(indexItem.time) }}</td>
+              <td>
+                <div>{{ formatMarketTime(indexItem.time) }}</div>
+                <div class="interval-text">{{ formatIntervalDateRange(indexItem) }}</div>
+              </td>
               <td>{{ formatNumber(indexItem.last) }}</td>
               <td>{{ formatNumber(indexItem.prev) }}</td>
               <td>{{ formatNumber(indexItem.high) }}</td>
@@ -324,6 +327,23 @@ export default {
       return parsedDate.toLocaleString('de-DE')
     },
 
+    formatIntervalDateRange(indexItem) {
+      const start = this.formatDateOnly(indexItem.interval_start_time)
+      const end = this.formatDateOnly(indexItem.interval_end_time)
+
+      if (!start && !end) return '-'
+      if (start && end && start === end) return start
+      if (start && end) return `${start} - ${end}`
+      return start || end || '-'
+    },
+
+    formatDateOnly(value) {
+      if (!value) return ''
+      const parsedDate = new Date(value)
+      if (Number.isNaN(parsedDate.getTime())) return ''
+      return parsedDate.toLocaleDateString('de-DE')
+    },
+
     changeClass(value) {
       if (value === null || value === undefined) return ''
       if (value > 0) return 'positive'
@@ -391,6 +411,12 @@ export default {
 .provider-symbol {
   color: var(--text-muted);
   font-size: 0.8rem;
+}
+
+.interval-text {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  margin-top: 0.15rem;
 }
 
 .row-error {
