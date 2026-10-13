@@ -7,6 +7,7 @@
       </div>
       <div class="nav-links">
         <router-link to="/">Dashboard</router-link>
+        <router-link to="/market-data">Market Data</router-link>
         <router-link to="/risk-management">Risk Management</router-link>
         <router-link to="/trades">Trades</router-link>
         <router-link to="/journal">Journal</router-link>

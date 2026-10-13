@@ -96,6 +96,17 @@ export default {
     return apiClient.get('/analytics/by-period', { params: { period, limit } })
   },
 
+  // Market API
+  async getMarketIndices(range = '1d') {
+    return apiClient.get('/market/indices', { params: { range } })
+  },
+
+  async getMarketIndex(symbol, name = null, range = '1d') {
+    const params = { symbol, range }
+    if (name) params.name = name
+    return apiClient.get('/market/index', { params })
+  },
+
   // Overnight Fees API
   async getOvernightFees(limit = 50, asCSV = false, offset = 0) {
     const params = { limit }

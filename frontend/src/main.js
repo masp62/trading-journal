@@ -9,6 +9,7 @@ import OvernightFees from './views/OvernightFees.vue'
 import Import from './views/Import.vue'
 import Expenses from './views/Expenses.vue'
 import Settings from './views/Settings.vue'
+import MarketData from './views/MarketData.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -20,6 +21,7 @@ const router = createRouter({
     { path: '/overnight', name: 'OvernightFees', component: OvernightFees, meta: { title: 'Overnight Financing Fees' } },
     { path: '/import', name: 'Import', component: Import, meta: { title: 'Import Data' } },
     { path: '/expenses', name: 'Expenses', component: Expenses, meta: { title: 'Trading Expenses' } },
+    { path: '/market-data', name: 'MarketData', component: MarketData, meta: { title: 'Market Data' } },
     { path: '/settings', name: 'Settings', component: Settings, meta: { title: 'Settings' } }
   ]
 })

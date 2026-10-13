@@ -20,6 +20,31 @@ class Config:
         },
         'targets': {
             'daily_profit': 25.0  # Target profit per day in EUR
+        },
+        'market': {
+            'source': 'Yahoo Finance',
+            'timeout_seconds': 8,
+            'request_delay_seconds': 1.2,
+            'max_retries': 2,
+            'retry_backoff_seconds': 2.0,
+            'cache_ttl_seconds': 30,
+            'indices': [
+                {'name': 'US Tech 100', 'provider_symbol': '^NDX'},
+                {'name': 'Hong Kong 50', 'provider_symbol': '^HSI'},
+                {'name': 'AEX', 'provider_symbol': '^AEX'},
+                {'name': 'US 500', 'provider_symbol': '^GSPC'},
+                {'name': 'Japan 225', 'provider_symbol': '^N225'},
+                {'name': 'Euro Stoxx 50', 'provider_symbol': '^STOXX50E'},
+                {'name': 'Spain 35', 'provider_symbol': '^IBEX'},
+                {'name': 'CAC 40', 'provider_symbol': '^FCHI'},
+                {'name': 'ASX 200', 'provider_symbol': '^AXJO'},
+                {'name': 'Small Cap 2000', 'provider_symbol': '^RUT'},
+                {'name': 'Italy 40', 'provider_symbol': 'FTSEMIB.MI'},
+                {'name': 'US 30', 'provider_symbol': '^DJI'},
+                {'name': 'Germany 40', 'provider_symbol': '^GDAXI'},
+                {'name': 'UK 100', 'provider_symbol': '^FTSE'},
+                {'name': 'SMI', 'provider_symbol': '^SSMI'}
+            ]
         }
     }
     

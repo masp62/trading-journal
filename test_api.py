@@ -5,6 +5,7 @@ import sys
 from pathlib import Path
 from datetime import datetime, UTC
 from uuid import uuid4
+from unittest.mock import patch
 
 import pytest
 from fastapi.testclient import TestClient
@@ -135,3 +136,83 @@ def test_get_analytics(client):
     data = response.json()
     for key in ["total_trades", "winning_trades", "losing_trades", "net_profit"]:
         assert key in data
+
+
+@patch("api.market.MarketDataService.get_us_indices_snapshot")
+def test_get_market_indices(mock_snapshot, client):
+    """Test market index comparison endpoint shape with mocked provider output."""
+    mock_snapshot.return_value = (
+        [
+            {
+                "symbol": "^NDX",
+                "name": "US100",
+                "time": "2026-10-13T10:00:00+00:00",
+                "last": 22000.5,
+                "prev": 21900.0,
+                "high": 22100.0,
+                "low": 21850.0,
+                "change": 100.5,
+                "change_percent": 0.46,
+            },
+            {
+                "symbol": "^DJI",
+                "name": "US30",
+                "time": "2026-10-13T10:00:00+00:00",
+                "last": 45000.0,
+                "prev": 44900.0,
+                "high": 45150.0,
+                "low": 44800.0,
+                "change": 100.0,
+                "change_percent": 0.22,
+            },
+        ],
+        [],
+    )
+
+    response = client.get("/api/market/indices", params={"range": "1wk"})
+    assert response.status_code == 200
+    mock_snapshot.assert_called_once_with(requested_range="1wk")
+
+    data = response.json()
+    assert data["source"]
+    assert "updated_at" in data
+    assert data["selected_range"] == "1wk"
+    assert isinstance(data["available_ranges"], list)
+    assert "1d" in data["available_ranges"]
+    assert len(data["indices"]) == 2
+
+    first = data["indices"][0]
+    for key in ["name", "time", "last", "prev", "high", "low", "change", "change_percent"]:
+        assert key in first
+
+
+@patch("api.market.MarketDataService.get_single_index_snapshot")
+def test_get_single_market_index(mock_single_snapshot, client):
+    """Test single market index endpoint supports range query for row-level retry."""
+    mock_single_snapshot.return_value = {
+        "symbol": "^NDX",
+        "name": "US Tech 100",
+        "time": "2026-10-13T10:00:00+00:00",
+        "last": 22000.5,
+        "prev": 21800.0,
+        "high": 22100.0,
+        "low": 21750.0,
+        "change": 200.5,
+        "change_percent": 0.92,
+        "error": None,
+    }
+
+    response = client.get(
+        "/api/market/index",
+        params={"symbol": "^NDX", "name": "US Tech 100", "range": "1mo"},
+    )
+    assert response.status_code == 200
+    mock_single_snapshot.assert_called_once_with(
+        provider_symbol="^NDX",
+        name="US Tech 100",
+        requested_range="1mo",
+    )
+
+    data = response.json()
+    assert data["symbol"] == "^NDX"
+    assert data["name"] == "US Tech 100"

@@ -230,3 +230,36 @@ class ExpenseResponse(BaseModel):
     created_at: Optional[str] = None
     
     model_config = ConfigDict(from_attributes=True)
+
+
+class MarketIndexQuote(BaseModel):
+    """Normalized quote snapshot for a market index."""
+    symbol: str = Field(..., description="Provider symbol")
+    name: str = Field(..., description="Display name")
+    time: str = Field(..., description="Last market update time (ISO-8601)")
+    last: Optional[float] = Field(None, description="Last traded price")
+    prev: Optional[float] = Field(None, description="Previous close")
+    high: Optional[float] = Field(None, description="Day high")
+    low: Optional[float] = Field(None, description="Day low")
+    fifty_two_week_high: Optional[float] = Field(None, description="52-week high")
+    fifty_two_week_low: Optional[float] = Field(None, description="52-week low")
+    change: Optional[float] = Field(None, description="Absolute price change")
+    change_percent: Optional[float] = Field(None, description="Percentage price change")
+    error: Optional[str] = Field(None, description="Fetch error for this specific index row")
+
+
+class MarketIndexError(BaseModel):
+    """Error details for an index that could not be fetched."""
+    symbol: str
+    name: str
+    message: str
+
+
+class MarketIndexComparisonResponse(BaseModel):
+    """Response model for the market index comparison endpoint."""
+    source: str
+    updated_at: str
+    selected_range: str = Field(..., description="Applied Yahoo chart range")
+    available_ranges: List[str] = Field(default_factory=list, description="Supported Yahoo chart ranges")
+    indices: List[MarketIndexQuote]
+    errors: List[MarketIndexError] = Field(default_factory=list)

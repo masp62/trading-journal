@@ -14,6 +14,7 @@ from api.trading212 import router as trading212_router
 from api.overnight import router as overnight_router
 from api.expenses import router as expenses_router
 from api.settings import router as settings_router
+from api.market import router as market_router
 
 
 @asynccontextmanager
@@ -57,6 +58,7 @@ app.include_router(trading212_router, prefix="/api")
 app.include_router(overnight_router, prefix="/api")
 app.include_router(expenses_router, prefix="/api")
 app.include_router(settings_router, prefix="/api")
+app.include_router(market_router, prefix="/api")
 
 # Mount static files for production (frontend build)
 frontend_dist = Path(__file__).parent.parent / "frontend" / "dist"
