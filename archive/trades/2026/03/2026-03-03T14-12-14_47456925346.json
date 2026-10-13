@@ -1,0 +1,13 @@
+{
+  "closedPositionId": "47456925346",
+  "positionUid": "5ca007d3-b3cc-49bc-9dc0-e9d5779b156b",
+  "orderId": "47456911289",
+  "quantity": 0.15,
+  "price": 24486.61,
+  "closePrice": 24570.98,
+  "resultAfterFxFeeAccountCurrency": 10.86,
+  "code": "#NQMAR26",
+  "direction": "buy",
+  "accountCurrency": "EUR",
+  "time": "2026-03-03T14:12:14.265592+02:00"
+}

@@ -1,0 +1,13 @@
+{
+  "closedPositionId": "47909072217",
+  "positionUid": "1e40262b-9d7f-4245-bd37-302e8bc29281",
+  "orderId": "47909071996",
+  "quantity": 0.2,
+  "price": 23572.1,
+  "closePrice": 23623.9,
+  "resultAfterFxFeeAccountCurrency": 10.36,
+  "code": "#AXMAR26",
+  "direction": "buy",
+  "accountCurrency": "EUR",
+  "time": "2026-03-12T19:27:15.560208+02:00"
+}

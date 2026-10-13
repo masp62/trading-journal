@@ -1,0 +1,16 @@
+{
+  "direction": "sell",
+  "code": "#AXDEC25",
+  "quantity": 0.15,
+  "orderNumber": {
+    "name": "POS39750291205",
+    "link": "positionHistory/211189cb-d147-45e9-9524-50fdd7c3e3c3",
+    "id": "211189cb-d147-45e9-9524-50fdd7c3e3c3",
+    "frontend": "IOSTABLET"
+  },
+  "interest": "-0.51",
+  "time": "2025-10-07T00:00+03:00",
+  "id": "2950180536",
+  "accountCurrency": "EUR",
+  "instrumentCurrency": "EUR"
+}

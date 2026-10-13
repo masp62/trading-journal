@@ -1,0 +1,33 @@
+{
+  "direction": "buy",
+  "code": "#NQMAR26",
+  "quantity": 0.1,
+  "orderNumber": {
+    "name": "POS45764091924",
+    "link": "positionHistory/422476c9-bf81-4bf5-b775-89d6b2647b90",
+    "id": "422476c9-bf81-4bf5-b775-89d6b2647b90",
+    "frontend": "SYSTEM",
+    "positionId": "45764091924"
+  },
+  "price": 26117.33,
+  "closePrice": 26146.15,
+  "resultGross": 2.42,
+  "realisedProfitLossAccountCurrency": 2.42,
+  "resultNet": 2.41,
+  "eventNumber": {
+    "name": "PO45764092076",
+    "id": "432eb967-1e69-4a15-a60f-1b0e99b0c086"
+  },
+  "eventType": "closed",
+  "time": "2026-01-28T21:30:52.000+02:00",
+  "openingTime": "2026-01-28T21:30:21.000+02:00",
+  "fxFee": -0.01,
+  "resultAfterFxFeeAccountCurrency": 2.41,
+  "interestAccountCurrency": 0.0,
+  "dividendAccountCurrency": 0.0,
+  "instrumentCurrency": "USD",
+  "accountCurrency": "EUR",
+  "netResultAccountCurrency": 2.41,
+  "realisedProfitLossInstrumentCurrency": 2.882,
+  "instrumentToAccountConversionRate": 0.839757478
+}

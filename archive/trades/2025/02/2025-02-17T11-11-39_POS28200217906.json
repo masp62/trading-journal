@@ -1,0 +1,31 @@
+{
+  "direction": "sell",
+  "code": "RHM_DE_CFD",
+  "quantity": 0.5,
+  "orderNumber": {
+    "name": "POS28200217906",
+    "link": "positionHistory/45f88d21-8c18-448c-8278-8fe22bff9ebd",
+    "id": "45f88d21-8c18-448c-8278-8fe22bff9ebd",
+    "frontend": "SYSTEM",
+    "positionId": "28200217906"
+  },
+  "price": "868.3",
+  "closePrice": "864.9",
+  "resultGross": "1.70",
+  "realisedProfitLossAccountCurrency": "1.7",
+  "resultNet": "1.70",
+  "eventNumber": {
+    "name": "PO28200217939",
+    "id": "7e51738c-09ac-4c05-9a4b-052231d469d1"
+  },
+  "eventType": "closed",
+  "time": "2025-02-17T11:11:39.000+02:00",
+  "openingTime": "2025-02-17T11:07:29.000+02:00",
+  "fxFee": "0",
+  "resultAfterFxFeeAccountCurrency": "1.7",
+  "interestAccountCurrency": "0",
+  "dividendAccountCurrency": "0",
+  "instrumentCurrency": "EUR",
+  "accountCurrency": "EUR",
+  "netResultAccountCurrency": "1.7"
+}

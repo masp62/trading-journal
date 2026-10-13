@@ -1,0 +1,31 @@
+{
+  "direction": "sell",
+  "code": "#AXJUN25",
+  "quantity": 0.1,
+  "orderNumber": {
+    "name": "POS30701529561",
+    "link": "positionHistory/239777d7-f400-4bb9-ba90-03d887d54ba1",
+    "id": "239777d7-f400-4bb9-ba90-03d887d54ba1",
+    "frontend": "SYSTEM",
+    "positionId": "30701529561"
+  },
+  "price": "19491.5",
+  "closePrice": "19301.4",
+  "resultGross": "19.01",
+  "realisedProfitLossAccountCurrency": "19.01",
+  "resultNet": "19.01",
+  "eventNumber": {
+    "name": "PO30701530260",
+    "id": "9d50a471-e04f-4180-b96e-d616f923c0d3"
+  },
+  "eventType": "closed",
+  "time": "2025-04-07T10:00:41.000+03:00",
+  "openingTime": "2025-04-07T09:58:47.000+03:00",
+  "fxFee": "0",
+  "resultAfterFxFeeAccountCurrency": "19.01",
+  "interestAccountCurrency": "0",
+  "dividendAccountCurrency": "0",
+  "instrumentCurrency": "EUR",
+  "accountCurrency": "EUR",
+  "netResultAccountCurrency": "19.01"
+}

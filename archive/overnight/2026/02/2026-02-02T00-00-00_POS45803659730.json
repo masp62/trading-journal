@@ -1,0 +1,16 @@
+{
+  "direction": "buy",
+  "code": "#AXMAR26",
+  "quantity": 0.15,
+  "orderNumber": {
+    "name": "POS45803659730",
+    "link": "positionHistory/abef5fa2-b913-44fa-9923-89e31bac1b83",
+    "id": "abef5fa2-b913-44fa-9923-89e31bac1b83",
+    "frontend": "SYSTEM"
+  },
+  "interest": -0.92,
+  "time": "2026-02-02T00:00+02:00",
+  "id": "7900010411",
+  "accountCurrency": "EUR",
+  "instrumentCurrency": "EUR"
+}

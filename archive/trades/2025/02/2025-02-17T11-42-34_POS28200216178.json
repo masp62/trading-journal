@@ -1,0 +1,31 @@
+{
+  "direction": "sell",
+  "code": "SOLUSD_CFD",
+  "quantity": 1.0,
+  "orderNumber": {
+    "name": "POS28200216178",
+    "link": "positionHistory/380b4444-c1e5-49c6-9f22-793d946bb5fd",
+    "id": "380b4444-c1e5-49c6-9f22-793d946bb5fd",
+    "frontend": "IOS",
+    "positionId": "28200216178"
+  },
+  "price": "181.65",
+  "closePrice": "185.13",
+  "resultGross": "-3.32",
+  "realisedProfitLossAccountCurrency": "-3.32",
+  "resultNet": "-3.34",
+  "eventNumber": {
+    "name": "MO28200219879",
+    "id": "235050959"
+  },
+  "eventType": "closed",
+  "time": "2025-02-17T11:42:34.000+02:00",
+  "openingTime": "2025-02-17T10:32:36.000+02:00",
+  "fxFee": "-0.02",
+  "resultAfterFxFeeAccountCurrency": "-3.34",
+  "interestAccountCurrency": "0",
+  "dividendAccountCurrency": "0",
+  "instrumentCurrency": "USD",
+  "accountCurrency": "EUR",
+  "netResultAccountCurrency": "-3.34"
+}

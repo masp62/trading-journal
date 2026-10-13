@@ -1,0 +1,33 @@
+{
+  "direction": "buy",
+  "code": "NVDA",
+  "quantity": 1.0,
+  "orderNumber": {
+    "name": "POS29053443339",
+    "link": "positionHistory/2a27f346-d3ca-4cfc-a050-72140605e748",
+    "id": "2a27f346-d3ca-4cfc-a050-72140605e748",
+    "frontend": "IOS",
+    "positionId": "29053443339"
+  },
+  "price": "117.61",
+  "closePrice": "117.71",
+  "resultGross": "0.09",
+  "realisedProfitLossAccountCurrency": "0.09",
+  "resultNet": "0.09",
+  "eventNumber": {
+    "name": "MO29053445361",
+    "id": "237192105"
+  },
+  "eventType": "closed",
+  "time": "2025-03-04T21:27:00.000+02:00",
+  "openingTime": "2025-03-04T21:16:20.000+02:00",
+  "fxFee": "0",
+  "resultAfterFxFeeAccountCurrency": "0.09",
+  "realisedProfitLossInstrumentCurrency": "0.1",
+  "instrumentToAccountConversionRate": 0.9438414346,
+  "interestAccountCurrency": "0",
+  "dividendAccountCurrency": "0",
+  "instrumentCurrency": "USD",
+  "accountCurrency": "EUR",
+  "netResultAccountCurrency": "0.09"
+}

@@ -1,0 +1,16 @@
+{
+  "direction": "buy",
+  "code": "#AXDEC25",
+  "quantity": 0.2,
+  "orderNumber": {
+    "name": "POS41761216814",
+    "link": "positionHistory/7d439c1f-3cce-4164-a55c-30119bc9d637",
+    "id": "7d439c1f-3cce-4164-a55c-30119bc9d637",
+    "frontend": "IOSTABLET"
+  },
+  "interest": "-1.16",
+  "time": "2025-11-24T00:00+02:00",
+  "id": "5000101022",
+  "accountCurrency": "EUR",
+  "instrumentCurrency": "EUR"
+}

@@ -1,0 +1,2 @@
+id,backtest_session_id,timestamp,symbol,direction,entry_price,exit_price,quantity,net_pnl,pnl_percent,stop_loss,take_profit,actual_exit_reason,r_multiple,entry_setup,strategy_name,timeframe,trade_quality,mistakes_made,notes
+1,Session_001,2026-03-08 10:30:00,AAPL,LONG,150.25,152.75,100,248.00,1.66,148.50,154.00,TAKE_PROFIT,1.65,MACD Crossover + RSI < 30,Mean Reversion MACD,15min,8,,"Example trade - delete this row"

@@ -1,0 +1,33 @@
+{
+  "direction": "sell",
+  "code": "TSLA",
+  "quantity": 1.0,
+  "orderNumber": {
+    "name": "POS28756933473",
+    "link": "positionHistory/af9bdd60-a5dd-4d7d-974a-59d0e2749070",
+    "id": "af9bdd60-a5dd-4d7d-974a-59d0e2749070",
+    "frontend": "IOS",
+    "positionId": "28756933473"
+  },
+  "price": "281.92",
+  "closePrice": "288.84",
+  "resultGross": "-6.64",
+  "realisedProfitLossAccountCurrency": "-6.64",
+  "resultNet": "-6.67",
+  "eventNumber": {
+    "name": "MO28756939796",
+    "id": "236465748"
+  },
+  "eventType": "closed",
+  "time": "2025-02-27T17:21:26.000+02:00",
+  "openingTime": "2025-02-27T17:02:07.000+02:00",
+  "fxFee": "-0.03",
+  "resultAfterFxFeeAccountCurrency": "-6.67",
+  "realisedProfitLossInstrumentCurrency": "-6.92",
+  "instrumentToAccountConversionRate": 0.9601259685,
+  "interestAccountCurrency": "0",
+  "dividendAccountCurrency": "0",
+  "instrumentCurrency": "USD",
+  "accountCurrency": "EUR",
+  "netResultAccountCurrency": "-6.67"
+}

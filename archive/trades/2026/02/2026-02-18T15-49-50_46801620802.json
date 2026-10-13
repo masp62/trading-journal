@@ -1,0 +1,13 @@
+{
+  "closedPositionId": "46801620802",
+  "positionUid": "5359d44f-ee42-40d3-ba22-c00845080317",
+  "orderId": "46801620783",
+  "quantity": -1.0,
+  "price": 188.61,
+  "closePrice": 188.41,
+  "resultAfterFxFeeAccountCurrency": 0.17,
+  "code": "NVDA",
+  "direction": "sell",
+  "accountCurrency": "EUR",
+  "time": "2026-02-18T15:49:50.599162+02:00"
+}

@@ -1,0 +1,16 @@
+{
+  "direction": "sell",
+  "code": "#NQDEC26",
+  "quantity": 0.05,
+  "orderNumber": {
+    "name": "POS57717008029",
+    "link": "positionHistory/82f608ee-462f-4e0a-8613-68aba3e6b9d6",
+    "id": "82f608ee-462f-4e0a-8613-68aba3e6b9d6",
+    "frontend": null
+  },
+  "interest": -0.19,
+  "time": "2026-09-22T00:00+03:00",
+  "id": "17450221229",
+  "accountCurrency": "EUR",
+  "instrumentCurrency": "USD"
+}

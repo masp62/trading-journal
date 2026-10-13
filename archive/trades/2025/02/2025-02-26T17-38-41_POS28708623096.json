@@ -1,0 +1,33 @@
+{
+  "direction": "buy",
+  "code": "PLTR",
+  "quantity": 5.0,
+  "orderNumber": {
+    "name": "POS28708623096",
+    "link": "positionHistory/009eb825-cf4f-4a8d-838d-9bb28ae195c3",
+    "id": "009eb825-cf4f-4a8d-838d-9bb28ae195c3",
+    "frontend": "SYSTEM",
+    "positionId": "28708623096"
+  },
+  "price": "89.45",
+  "closePrice": "90.03",
+  "resultGross": "2.76",
+  "realisedProfitLossAccountCurrency": "2.76",
+  "resultNet": "2.75",
+  "eventNumber": {
+    "name": "PO28708628227",
+    "id": "246c78ce-e349-4d81-af20-7710792d095c"
+  },
+  "eventType": "closed",
+  "time": "2025-02-26T17:38:41.000+02:00",
+  "openingTime": "2025-02-26T17:16:52.000+02:00",
+  "fxFee": "-0.01",
+  "resultAfterFxFeeAccountCurrency": "2.75",
+  "realisedProfitLossInstrumentCurrency": "2.9",
+  "instrumentToAccountConversionRate": 0.9523809524,
+  "interestAccountCurrency": "0",
+  "dividendAccountCurrency": "0",
+  "instrumentCurrency": "USD",
+  "accountCurrency": "EUR",
+  "netResultAccountCurrency": "2.75"
+}

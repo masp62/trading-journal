@@ -1,0 +1,16 @@
+{
+  "direction": "sell",
+  "code": "XAGUSD",
+  "quantity": 10.0,
+  "orderNumber": {
+    "name": "POS45765136380",
+    "link": "positionHistory/2e661ba3-5cab-4a7c-93ee-16e9fe74d89d",
+    "id": "2e661ba3-5cab-4a7c-93ee-16e9fe74d89d",
+    "frontend": "SYSTEM"
+  },
+  "interest": -0.13,
+  "time": "2026-01-29T00:00+02:00",
+  "id": "7750029817",
+  "accountCurrency": "EUR",
+  "instrumentCurrency": "USD"
+}

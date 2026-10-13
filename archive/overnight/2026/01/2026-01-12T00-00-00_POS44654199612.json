@@ -1,0 +1,16 @@
+{
+  "direction": "sell",
+  "code": "#NQMAR26",
+  "quantity": 0.15,
+  "orderNumber": {
+    "name": "POS44654199612",
+    "link": "positionHistory/a3165ca9-8805-4925-92a4-7ff62c8650f6",
+    "id": "a3165ca9-8805-4925-92a4-7ff62c8650f6",
+    "frontend": "SYSTEM"
+  },
+  "interest": "-1.39",
+  "time": "2026-01-12T00:00+02:00",
+  "id": "7000151689",
+  "accountCurrency": "EUR",
+  "instrumentCurrency": "USD"
+}

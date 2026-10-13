@@ -1,0 +1,31 @@
+{
+  "direction": "buy",
+  "code": "#AXSEP25",
+  "quantity": 0.1,
+  "orderNumber": {
+    "name": "POS34612377058",
+    "link": "positionHistory/a42145e4-5c9b-4157-b2b0-24a034f713e2",
+    "id": "a42145e4-5c9b-4157-b2b0-24a034f713e2",
+    "frontend": "SYSTEM",
+    "positionId": "34612377058"
+  },
+  "price": "23838.2",
+  "closePrice": "23852.9",
+  "resultGross": "1.47",
+  "realisedProfitLossAccountCurrency": "1.47",
+  "resultNet": "1.47",
+  "eventNumber": {
+    "name": "PO34612395004",
+    "id": "5ec382bc-9f77-4055-8fb1-55940df286b2"
+  },
+  "eventType": "closed",
+  "time": "2025-06-24T11:57:41.000+03:00",
+  "openingTime": "2025-06-24T10:04:29.000+03:00",
+  "fxFee": "0",
+  "resultAfterFxFeeAccountCurrency": "1.47",
+  "interestAccountCurrency": "0",
+  "dividendAccountCurrency": "0",
+  "instrumentCurrency": "EUR",
+  "accountCurrency": "EUR",
+  "netResultAccountCurrency": "1.47"
+}

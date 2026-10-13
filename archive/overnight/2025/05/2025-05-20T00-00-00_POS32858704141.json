@@ -1,0 +1,16 @@
+{
+  "direction": "sell",
+  "code": "#AXJUN25",
+  "quantity": 0.3,
+  "orderNumber": {
+    "name": "POS32858704141",
+    "link": "positionHistory/6ec3f45a-84d9-459e-baff-f2a24e83e32a",
+    "id": "6ec3f45a-84d9-459e-baff-f2a24e83e32a",
+    "frontend": "SYSTEM"
+  },
+  "interest": "-1.00",
+  "time": "2025-05-20T00:00+03:00",
+  "id": "319367754",
+  "accountCurrency": "EUR",
+  "instrumentCurrency": "EUR"
+}

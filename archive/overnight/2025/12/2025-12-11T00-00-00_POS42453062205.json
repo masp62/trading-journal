@@ -1,0 +1,16 @@
+{
+  "direction": "sell",
+  "code": "#NQDEC25",
+  "quantity": 0.15,
+  "orderNumber": {
+    "name": "POS42453062205",
+    "link": "positionHistory/5c79153f-0440-49fa-9105-a6d30a919dfd",
+    "id": "5c79153f-0440-49fa-9105-a6d30a919dfd",
+    "frontend": "IOS"
+  },
+  "interest": "-0.46",
+  "time": "2025-12-11T00:00+02:00",
+  "id": "5749970950",
+  "accountCurrency": "EUR",
+  "instrumentCurrency": "USD"
+}

@@ -1,0 +1,16 @@
+{
+  "direction": "buy",
+  "code": "#AXDEC25",
+  "quantity": 0.15,
+  "orderNumber": {
+    "name": "POS40012645467",
+    "link": "positionHistory/e87a5fce-2884-4e35-ac62-a17990d4cbee",
+    "id": "e87a5fce-2884-4e35-ac62-a17990d4cbee",
+    "frontend": "SYSTEM"
+  },
+  "interest": "-0.30",
+  "time": "2025-10-31T00:00+02:00",
+  "id": "4000154698",
+  "accountCurrency": "EUR",
+  "instrumentCurrency": "EUR"
+}

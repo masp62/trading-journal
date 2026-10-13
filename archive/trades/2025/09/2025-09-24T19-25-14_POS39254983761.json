@@ -1,0 +1,33 @@
+{
+  "direction": "buy",
+  "code": "#NQDEC25",
+  "quantity": 0.15,
+  "orderNumber": {
+    "name": "POS39254983761",
+    "link": "positionHistory/6babff71-8bbd-4841-8de0-386e6f90edfc",
+    "id": "6babff71-8bbd-4841-8de0-386e6f90edfc",
+    "frontend": "SYSTEM",
+    "positionId": "39254983761"
+  },
+  "price": "24682.45",
+  "closePrice": "24687.65",
+  "resultGross": "0.66",
+  "realisedProfitLossAccountCurrency": "0.66",
+  "resultNet": "0.66",
+  "eventNumber": {
+    "name": "PO39254984299",
+    "id": "1f2d32aa-d692-4475-b6f4-c86ec2e93f58"
+  },
+  "eventType": "closed",
+  "time": "2025-09-24T19:25:14.000+03:00",
+  "openingTime": "2025-09-24T19:23:06.000+03:00",
+  "fxFee": "0",
+  "resultAfterFxFeeAccountCurrency": "0.66",
+  "realisedProfitLossInstrumentCurrency": "0.78",
+  "instrumentToAccountConversionRate": 0.851861317,
+  "interestAccountCurrency": "0",
+  "dividendAccountCurrency": "0",
+  "instrumentCurrency": "USD",
+  "accountCurrency": "EUR",
+  "netResultAccountCurrency": "0.66"
+}

@@ -1,0 +1,13 @@
+{
+  "closedPositionId": "48308784370",
+  "positionUid": "32f47a84-fd9f-48f7-a55c-de68d7b817f8",
+  "orderId": "48308783001",
+  "quantity": 0.15,
+  "price": 24287.13,
+  "closePrice": 24324.88,
+  "resultAfterFxFeeAccountCurrency": 4.88,
+  "code": "#NQJUN26",
+  "direction": "buy",
+  "accountCurrency": "EUR",
+  "time": "2026-03-20T18:15:27.166853+02:00"
+}

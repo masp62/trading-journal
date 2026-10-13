@@ -1,0 +1,16 @@
+{
+  "direction": "buy",
+  "code": "#NQSEP26",
+  "quantity": 0.05,
+  "orderNumber": {
+    "name": "POS56757235012",
+    "link": "positionHistory/0373ef07-11fc-4b44-a12e-278be9387f92",
+    "id": "0373ef07-11fc-4b44-a12e-278be9387f92",
+    "frontend": null
+  },
+  "interest": -0.32,
+  "time": "2026-09-07T00:00+03:00",
+  "id": "16900164712",
+  "accountCurrency": "EUR",
+  "instrumentCurrency": "USD"
+}

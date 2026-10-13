@@ -1,0 +1,16 @@
+{
+  "direction": "buy",
+  "code": "#ZSEP25",
+  "quantity": 0.25,
+  "orderNumber": {
+    "name": "POS37207755782",
+    "link": "positionHistory/9772bbe9-7635-4c34-997f-cb79c07acbcd",
+    "id": "9772bbe9-7635-4c34-997f-cb79c07acbcd",
+    "frontend": "SYSTEM"
+  },
+  "interest": "-0.66",
+  "time": "2025-08-18T00:00+03:00",
+  "id": "339719732",
+  "accountCurrency": "EUR",
+  "instrumentCurrency": "GBP"
+}

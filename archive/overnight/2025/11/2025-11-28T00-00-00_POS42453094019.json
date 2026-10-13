@@ -1,0 +1,16 @@
+{
+  "direction": "buy",
+  "code": "#NQDEC25",
+  "quantity": 0.2,
+  "orderNumber": {
+    "name": "POS42453094019",
+    "link": "positionHistory/ddfacb96-c186-4805-8d6b-c81b7207888b",
+    "id": "ddfacb96-c186-4805-8d6b-c81b7207888b",
+    "frontend": "SYSTEM"
+  },
+  "interest": "-0.36",
+  "time": "2025-11-28T00:00+02:00",
+  "id": "5150098479",
+  "accountCurrency": "EUR",
+  "instrumentCurrency": "USD"
+}

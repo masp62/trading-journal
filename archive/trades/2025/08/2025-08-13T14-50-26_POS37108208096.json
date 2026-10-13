@@ -1,0 +1,33 @@
+{
+  "direction": "buy",
+  "code": "#ZSEP25",
+  "quantity": 0.15,
+  "orderNumber": {
+    "name": "POS37108208096",
+    "link": "positionHistory/06037f3e-765f-4760-b56f-fc930bc942bf",
+    "id": "06037f3e-765f-4760-b56f-fc930bc942bf",
+    "frontend": "SYSTEM",
+    "positionId": "37108208096"
+  },
+  "price": "9165.8",
+  "closePrice": "9167.7",
+  "resultGross": "0.33",
+  "realisedProfitLossAccountCurrency": "0.33",
+  "resultNet": "0.33",
+  "eventNumber": {
+    "name": "PO37108217974",
+    "id": "52417df9-64bd-4dc6-b09b-4d7ae676c915"
+  },
+  "eventType": "closed",
+  "time": "2025-08-13T14:50:26.000+03:00",
+  "openingTime": "2025-08-13T12:01:09.000+03:00",
+  "fxFee": "0",
+  "resultAfterFxFeeAccountCurrency": "0.33",
+  "realisedProfitLossInstrumentCurrency": "0.285",
+  "instrumentToAccountConversionRate": 1.1585203378,
+  "interestAccountCurrency": "0",
+  "dividendAccountCurrency": "0",
+  "instrumentCurrency": "GBP",
+  "accountCurrency": "EUR",
+  "netResultAccountCurrency": "0.33"
+}

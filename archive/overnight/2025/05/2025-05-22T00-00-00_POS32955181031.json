@@ -1,0 +1,16 @@
+{
+  "direction": "buy",
+  "code": "#NQJUN25",
+  "quantity": 0.1,
+  "orderNumber": {
+    "name": "POS32955181031",
+    "link": "positionHistory/53f48e08-7f50-4bfd-a1fd-cada1eaf1e3f",
+    "id": "53f48e08-7f50-4bfd-a1fd-cada1eaf1e3f",
+    "frontend": "WC4"
+  },
+  "interest": "-0.16",
+  "time": "2025-05-22T00:00+03:00",
+  "id": "319950881",
+  "accountCurrency": "EUR",
+  "instrumentCurrency": "USD"
+}

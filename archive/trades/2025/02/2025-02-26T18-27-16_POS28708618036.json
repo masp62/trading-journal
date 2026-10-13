@@ -1,0 +1,33 @@
+{
+  "direction": "buy",
+  "code": "MSFT",
+  "quantity": 1.0,
+  "orderNumber": {
+    "name": "POS28708618036",
+    "link": "positionHistory/a4be15d5-fece-42b7-97c2-a97130a84737",
+    "id": "a4be15d5-fece-42b7-97c2-a97130a84737",
+    "frontend": "SYSTEM",
+    "positionId": "28708618036"
+  },
+  "price": "400.27",
+  "closePrice": "402.38",
+  "resultGross": "2.01",
+  "realisedProfitLossAccountCurrency": "2.01",
+  "resultNet": "2.00",
+  "eventNumber": {
+    "name": "PO28708624972",
+    "id": "19ec5b27-9d93-4977-bd9f-cbeb01934ec8"
+  },
+  "eventType": "closed",
+  "time": "2025-02-26T18:27:16.000+02:00",
+  "openingTime": "2025-02-26T16:55:15.000+02:00",
+  "fxFee": "-0.01",
+  "resultAfterFxFeeAccountCurrency": "2",
+  "realisedProfitLossInstrumentCurrency": "2.11",
+  "instrumentToAccountConversionRate": 0.9515019458,
+  "interestAccountCurrency": "0",
+  "dividendAccountCurrency": "0",
+  "instrumentCurrency": "USD",
+  "accountCurrency": "EUR",
+  "netResultAccountCurrency": "2"
+}

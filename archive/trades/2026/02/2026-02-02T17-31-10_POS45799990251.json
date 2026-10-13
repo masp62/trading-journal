@@ -1,0 +1,33 @@
+{
+  "direction": "buy",
+  "code": "#AXMAR26",
+  "quantity": 0.15,
+  "orderNumber": {
+    "name": "POS45799990251",
+    "link": "positionHistory/2e949262-53e2-4503-8a69-a59d84c08629",
+    "id": "2e949262-53e2-4503-8a69-a59d84c08629",
+    "frontend": "SYSTEM",
+    "positionId": "45799990251"
+  },
+  "price": 24841.1,
+  "closePrice": 24907.9,
+  "resultGross": 8.79,
+  "realisedProfitLossAccountCurrency": 10.02,
+  "resultNet": 8.79,
+  "eventNumber": {
+    "name": "PO46018611533",
+    "id": "e33e5d4a-fde4-486d-9d4f-45dd8016abd2"
+  },
+  "eventType": "closed",
+  "time": "2026-02-02T17:31:10.000+02:00",
+  "openingTime": "2026-01-29T10:24:03.000+02:00",
+  "fxFee": 0.0,
+  "resultAfterFxFeeAccountCurrency": 10.02,
+  "interestAccountCurrency": -1.23,
+  "dividendAccountCurrency": 0.0,
+  "instrumentCurrency": "EUR",
+  "accountCurrency": "EUR",
+  "netResultAccountCurrency": 8.79,
+  "realisedProfitLossInstrumentCurrency": null,
+  "instrumentToAccountConversionRate": null
+}

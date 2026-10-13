@@ -1,0 +1,16 @@
+{
+  "direction": "buy",
+  "code": "#AXJUN26",
+  "quantity": 0.15,
+  "orderNumber": {
+    "name": "POS48308771554",
+    "link": "positionHistory/6e97981f-2c64-4a6e-9170-2c13d9bbf434",
+    "id": "6e97981f-2c64-4a6e-9170-2c13d9bbf434",
+    "frontend": null
+  },
+  "interest": -0.84,
+  "time": "2026-03-23T00:00+02:00",
+  "id": "9999963948",
+  "accountCurrency": "EUR",
+  "instrumentCurrency": "EUR"
+}

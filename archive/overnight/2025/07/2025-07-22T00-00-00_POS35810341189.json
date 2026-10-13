@@ -1,0 +1,16 @@
+{
+  "direction": "buy",
+  "code": "#AXSEP25",
+  "quantity": 0.1,
+  "orderNumber": {
+    "name": "POS35810341189",
+    "link": "positionHistory/431f2881-f77d-4be7-be4b-35ef88997e20",
+    "id": "431f2881-f77d-4be7-be4b-35ef88997e20",
+    "frontend": "SYSTEM"
+  },
+  "interest": "-0.20",
+  "time": "2025-07-22T00:00+03:00",
+  "id": "333266291",
+  "accountCurrency": "EUR",
+  "instrumentCurrency": "EUR"
+}

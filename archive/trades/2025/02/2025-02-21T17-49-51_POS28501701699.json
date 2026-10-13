@@ -1,0 +1,31 @@
+{
+  "direction": "sell",
+  "code": "AMZN",
+  "quantity": 1.0,
+  "orderNumber": {
+    "name": "POS28501701699",
+    "link": "positionHistory/3087afa0-7521-4a45-8f0f-1a0a42924686",
+    "id": "3087afa0-7521-4a45-8f0f-1a0a42924686",
+    "frontend": "IOS",
+    "positionId": "28501701699"
+  },
+  "price": "218.56",
+  "closePrice": "219.03",
+  "resultGross": "-0.45",
+  "realisedProfitLossAccountCurrency": "-0.45",
+  "resultNet": "-0.45",
+  "eventNumber": {
+    "name": "MO28501702367",
+    "id": "235713157"
+  },
+  "eventType": "closed",
+  "time": "2025-02-21T17:49:51.000+02:00",
+  "openingTime": "2025-02-21T17:45:55.000+02:00",
+  "fxFee": "0",
+  "resultAfterFxFeeAccountCurrency": "-0.45",
+  "interestAccountCurrency": "0",
+  "dividendAccountCurrency": "0",
+  "instrumentCurrency": "USD",
+  "accountCurrency": "EUR",
+  "netResultAccountCurrency": "-0.45"
+}

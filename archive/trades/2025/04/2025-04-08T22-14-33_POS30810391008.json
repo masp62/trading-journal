@@ -1,0 +1,33 @@
+{
+  "direction": "buy",
+  "code": "SOLUSD_CFD",
+  "quantity": 1.0,
+  "orderNumber": {
+    "name": "POS30810391008",
+    "link": "positionHistory/e9d32e9e-f66c-4da7-a968-66bac09f9007",
+    "id": "e9d32e9e-f66c-4da7-a968-66bac09f9007",
+    "frontend": "SYSTEM",
+    "positionId": "30810391008"
+  },
+  "price": "106.135",
+  "closePrice": "104.891",
+  "resultGross": "-1.13",
+  "realisedProfitLossAccountCurrency": "-1.13",
+  "resultNet": "-1.14",
+  "eventNumber": {
+    "name": "PO30810391134",
+    "id": "ec77b96e-a7fc-4d7c-8109-466b8e125791"
+  },
+  "eventType": "closed",
+  "time": "2025-04-08T22:14:33.000+03:00",
+  "openingTime": "2025-04-08T21:42:25.000+03:00",
+  "fxFee": "-0.01",
+  "resultAfterFxFeeAccountCurrency": "-1.14",
+  "realisedProfitLossInstrumentCurrency": "-1.244",
+  "instrumentToAccountConversionRate": 0.9115853381,
+  "interestAccountCurrency": "0",
+  "dividendAccountCurrency": "0",
+  "instrumentCurrency": "USD",
+  "accountCurrency": "EUR",
+  "netResultAccountCurrency": "-1.14"
+}

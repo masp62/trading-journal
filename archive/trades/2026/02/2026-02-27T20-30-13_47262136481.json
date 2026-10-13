@@ -1,0 +1,13 @@
+{
+  "closedPositionId": "47262136481",
+  "positionUid": "f213a6fe-0434-4c3a-bbae-5a40794564a0",
+  "orderId": "47262136438",
+  "quantity": -5.0,
+  "price": 93.0692,
+  "closePrice": 93.023,
+  "resultAfterFxFeeAccountCurrency": 0.2,
+  "code": "XAGUSD",
+  "direction": "sell",
+  "accountCurrency": "EUR",
+  "time": "2026-02-27T20:30:13.394224+02:00"
+}

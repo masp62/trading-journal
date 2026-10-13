@@ -1,0 +1,33 @@
+{
+  "direction": "sell",
+  "code": "XAGUSD",
+  "quantity": 5.0,
+  "orderNumber": {
+    "name": "POS45810751571",
+    "link": "positionHistory/2d9cfc96-eeb1-4b02-8ced-2241dfe76373",
+    "id": "2d9cfc96-eeb1-4b02-8ced-2241dfe76373",
+    "frontend": "SYSTEM",
+    "positionId": "45810751571"
+  },
+  "price": 113.215,
+  "closePrice": 112.96,
+  "resultGross": 1.07,
+  "realisedProfitLossAccountCurrency": 1.07,
+  "resultNet": 1.06,
+  "eventNumber": {
+    "name": "PO45810751952",
+    "id": "e9b4118f-1bd0-48d3-8330-f68c61631219"
+  },
+  "eventType": "closed",
+  "time": "2026-01-29T17:20:19.000+02:00",
+  "openingTime": "2026-01-29T17:19:14.000+02:00",
+  "fxFee": -0.01,
+  "resultAfterFxFeeAccountCurrency": 1.06,
+  "interestAccountCurrency": 0.0,
+  "dividendAccountCurrency": 0.0,
+  "instrumentCurrency": "USD",
+  "accountCurrency": "EUR",
+  "netResultAccountCurrency": 1.06,
+  "realisedProfitLossInstrumentCurrency": 1.275,
+  "instrumentToAccountConversionRate": 0.8389050611
+}
